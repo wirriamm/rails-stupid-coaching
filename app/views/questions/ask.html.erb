@@ -1,5 +1,7 @@
 <p>Ask your coach anything:</p>
-<form action="/answer" mathod="get" class="d-flex">
-  <input type="text" name="question" class="flex-grow-1">
-  <input type="submit" value="Ask!">
+<form class="d-flex" action="/answer" mathod="get">
+  <!-- <input class="flex-grow-1 py-3 px-3" type="textarea" name="question" placeholder="What do you want to ask coach?"> -->
+  <textarea class="flex-grow-1 p-2 rounded-left" name="question" placeholder="What do you want to ask coach?" id="question" cols="30" rows="2" style="align-content:center"></textarea>
+  <input class="px-3 btn btn-primary sharpened-left" type="submit" value="Ask!">
 </form>
+
