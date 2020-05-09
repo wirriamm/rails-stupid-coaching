@@ -1,9 +1,25 @@
-<p>
+<!-- <p>
   <strong>Your question:</strong> <%= @question %>
 </p>
 
 <p>
   <strong>Coach's answer:</strong> <%= @answer %>
-</p>
+</p> -->
 
-<%= link_to "Ask another question", ask_path %>
+<blockquote class="blockquote border-left border-3 my-3 pl-3">
+  <p class="mb-0">
+    <%= @question %>
+  </p>
+  <footer class="blockquote-footer">You</footer>
+</blockquote>
+
+<blockquote class="blockquote border-left border-3 my-3 pl-3">
+  <p class="mb-0">
+    <%= @answer %>
+  </p>
+  <footer class="blockquote-footer">Your coach</footer>
+</blockquote>
+
+<div>
+  <%= link_to "Ask another question", ask_path %>
+</div>
